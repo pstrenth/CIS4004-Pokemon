@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pokemon Team Builder</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1>Pokemon Team Builder</h1>
+
+<div class="card">
+
+<div class="row">
+<div>
+<label for="pokemonQuery">Pokemon name or ID</label>
+<input id="pokemonQuery" type="text" placeholder="e.g. pikachu or 25">
+</div>
+
+<div>
+<button id="fetchBtn">Submit</button>
+</div>
+
+<div>
+<button id="clearCacheBtn">Clear Cache</button>
+</div>
+</div>
+
+<p id="status" class="muted"></p>
+<p id="error" class="error"></p>
+
+<div id="pokemonPanel">
+
+<h2 id="pokeName"></h2>
+
+<div class="row">
+
+<div>
+<img id="pokeImg">
+</div>
+
+<div>
+
+<audio id="pokeAudio" controls></audio>
+
+<div class="move-select">
+
+<select id="move1"></select>
+<select id="move2"></select>
+<select id="move3"></select>
+<select id="move4"></select>
+
+</div>
+
+<button id="addToTeamBtn">Add to Team</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="team-header">
+<h2>Your Team</h2>
+<button id="clearTeamBtn">Clear Team</button>
+</div>
+
+<div id="teamContainer" class="team-grid"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
